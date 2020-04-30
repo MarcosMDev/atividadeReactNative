@@ -53,6 +53,8 @@ export class RegisterPage extends Component<any, State> {
             return alert("Senhas não conferem!")
         } else if (!body.name || !body.email || !body.userPassword || !this.state.confirmPassword || !body.age || !body.address) {
             return alert("Todos os campos são obrigatorios!")
+        } else if (body.age < 18) {
+            return alert("Menor que 18 anos!")
         } else {
             api.post('/user/customer/add', body).then(() => {
                 this.props.navigation.navigate('login')

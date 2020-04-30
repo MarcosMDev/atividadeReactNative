@@ -1,9 +1,8 @@
 import React, { Component, ReactNode } from 'react'
 
-import { Container, Content, Text, List, ListItem, CardItem, Body, Icon, ActionSheet } from 'native-base'
+import { Container, Content, Text, List, ListItem, CardItem, Body, Icon } from 'native-base'
 
 import styles from './style'
-import style from '../LoginPage/style'
 
 export class HomeBody extends Component<any, any> {
     render(): ReactNode {

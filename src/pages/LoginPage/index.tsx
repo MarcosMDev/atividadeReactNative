@@ -42,7 +42,7 @@ export class LoginPage extends Component<any, State> {
             this.setToken(response.data)
             this.props.navigation.navigate('home')
         }).catch(() => {
-            return alert('Email ou senha invalido!')
+            return alert('Não foi possivel entrar, tente novamente!')
         })
     }
 

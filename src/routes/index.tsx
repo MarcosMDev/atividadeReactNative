@@ -17,8 +17,9 @@ const styles = StyleSheet.create({
     }
 });
 
+
 export default class Routes extends Component {
-    
+
     render(): ReactNode {
         const StackNavigator = createStackNavigator()
         return (
@@ -29,13 +30,6 @@ export default class Routes extends Component {
                             headerStyle: {
                                 backgroundColor: "#0A60FF"
                             },
-                            headerRight: () => (
-                                <Icon 
-                                    name='cart'
-                                    style={styles.cart}
-                                    onPress={() => alert("Um dia, quem sabe implemento isso!")}
-                                />
-                            ),
                             headerTintColor: '#fff',
                             headerTitleAlign: 'center'
                         }} />
@@ -46,7 +40,7 @@ export default class Routes extends Component {
                         },
                         headerRight: () => (
                             <Icon 
-                                name='cart'
+                                name='power'
                                 style={styles.cart}
                                 onPress={() => alert("Um dia, quem sabe implemento isso!")}
                             />
@@ -62,7 +56,7 @@ export default class Routes extends Component {
                         },
                         headerRight: () => (
                             <Icon 
-                                name='cart'
+                                name='power'
                                 style={styles.cart}
                                 onPress={() => alert("Um dia, quem sabe implemento isso!")}
                             />
@@ -78,7 +72,7 @@ export default class Routes extends Component {
                         },
                         headerRight: () => (
                             <Icon 
-                                name='cart'
+                                name='power'
                                 style={styles.cart}
                                 onPress={() => alert("Um dia, quem sabe implemento isso!")}
                             />
